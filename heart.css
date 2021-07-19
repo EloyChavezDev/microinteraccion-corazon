@@ -17,3 +17,33 @@
    to { background-position: right; }
   }
   
+  /*V 1.02 Dino*/
+  .dino {
+    background-image: url('Dino.png');
+    width: 24px;
+    height: 24px;
+  }
+  
+  .dino-animation {
+    animation: dinorun 2s steps(23) infinite;
+  }
+  
+  @keyframes dinorun {
+   from { background-position: left; }
+   to { background-position: right; }
+  }
+
+  .flex {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .flex a {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  .flex a:hover {
+      text-decoration: underline;
+  }
