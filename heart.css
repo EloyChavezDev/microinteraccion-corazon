@@ -1,0 +1,19 @@
+/* Aqui creamos el corazon y colocamos las medidas del primer elemento del sprite */
+.heart {
+    background-image: url('heart.png');
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+  }
+  
+/* Aqui creamos la animacion, el tiempo que durara, los frames que contiene -1, la cantidad de veces que se repetira y que quede el ultimo frame a la vista al finalizar */
+  .heart-animation {
+    animation: heart-beat .8s steps(28) 1 forwards;  
+  }
+  
+/*Le decimos a los frames que se muevan de izquierda a derecha*/
+  @keyframes heart-beat {
+   from { background-position: left; }
+   to { background-position: right; }
+  }
+  
